@@ -12,6 +12,6 @@
 
   - name: Install updates for Ubuntu
     apt:
-      upgrade: dist
-      update_cache: yes
+      upgrade: yes
+      update_cache: true
     when: ansible_distribution == "Ubuntu"
